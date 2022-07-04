@@ -22,6 +22,7 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(rosidl_typesupport_c REQUIRED)
 find_package(std_msgs REQUIRED)
 
 if(BUILD_TESTING)
@@ -36,10 +37,10 @@ if(BUILD_TESTING)
 endif()
 
 rosidl_generate_interfaces(ros2_test
-  "msg/CustomMessage.msg"
-  "msg/CustomMessage2.msg"
+  "msg/Lane2D.msg"
+  "msg/Detection2D.msg"
 #  "srv/Test.srv"
-  DEPENDENCIES std_msgs builtin_interfaces
+  DEPENDENCIES std_msgs builtin_interfaces rosidl_typesupport_c
 )
 
 install(

@@ -1,4 +1,13 @@
 -
   ros1_package_name: 'ros1_test'
+  ros1_message_name: 'Lane2D'
   ros2_package_name: 'ros2_test'
-
+  ros2_message_name: 'Lane2D'
+  fields_1_to_2:
+    lineType: 'line_type'
+    positionType: 'position_type'
+-
+  ros1_package_name: 'ros1_test'
+  ros1_message_name: 'Detection2D'
+  ros2_package_name: 'ros2_test'
+  ros2_message_name: 'Detection2D'
